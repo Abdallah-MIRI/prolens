@@ -1,0 +1,18 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block content %}
+  <h3 style="width: fit-content; margin: 0 auto;">{{ recepient }}</h3>
+  <form method="post" class="form">
+    {% csrf_token %}
+    {{ form.client_name }}
+    {{ form.client_number }}
+    {{ form.email }}
+    {{ form.message }}
+    <!-- <input type="text" name="username" required placeholder="Your name" maxlength="20" minlength="6">
+    <input type="text" name="number" required placeholder="Number" maxlength="13" minlength="11">
+    <input type="email" name="email" placeholder="Email">
+    <textarea name="massage" id="massage" placeholder="Massage" required></textarea> -->
+    <button id="submit">Submit</button>
+  </form>
+
+{% endblock content %}

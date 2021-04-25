@@ -1,0 +1,13 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block content %}
+  <div id="slide-images" class="slide-images infinite-container grid">
+    {% comment %} {% for post in posts %} {% endcomment %}
+      {% comment %} <div id="cat-img" class="cat-img infinite-item grid-item"> {% endcomment %}
+        {% comment %} <img src="media/{{post.img_post.url}}" alt="{{post.img_alt}}" width="100%" height="100%" title="{{post.title}}" style="display: block;"> {% endcomment %}
+      {% comment %} </div> {% endcomment %}
+    {% comment %} {% endfor %} {% endcomment %}
+  </div>
+  <div id="load-box"></div>
+  <button id="load-more-btn">More Posts</button>
+{% endblock content %}

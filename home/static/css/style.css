@@ -1,0 +1,41 @@
+/* 
+//
+// Main File Website 
+//
+*/
+
+/* Import File css */
+@import 'aside.css';
+@import 'main-content.css';
+@import 'connect.css';
+
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  height: 100vh;
+}
+
+body.hidden {
+  overflow: hidden;
+}
+
+.container-page {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.d-none {
+  display: none !important;
+}
